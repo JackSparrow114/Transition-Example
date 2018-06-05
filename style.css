@@ -1,34 +1,37 @@
 body {
-    padding: 50px;
-  }
-  
-  .trigger {
-    width: 200px;
-    height: 200px;
-    border: 20px solid #999;
-    background: #ddd;
-  }
-  
-  .box {
-    display: inline-block;
-    background: pink;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    transition: -webkit-transform 2s cubic-bezier(0, 0.47, 0.32, 1.97);
-    transition: transform 2s cubic-bezier(0, 0.47, 0.32, 1.97);
-    transition: transform 2s cubic-bezier(0, 0.47, 0.32, 1.97), -webkit-transform 2s cubic-bezier(0, 0.47, 0.32, 1.97);
-    pointer-events: none;
-  }
-  
-  .trigger.clicked .box {
-    -webkit-transform: translate(200px, 150px) rotate(20deg);
-            transform: translate(200px, 150px) rotate(20deg);
-  }
+  padding: 50px;
+}
 
-  #click-text{
-    display: none;
-  }
-  
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.trigger {
+  width: 200px;
+  height: 200px;
+  border: 20px solid #999;
+  background: #ddd;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.box {
+  display: inline-block;
+  background: pink;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  transition: -webkit-transform 2s cubic-bezier(0, 0.47, 0.32, 1.97);
+  transition: transform 2s cubic-bezier(0, 0.47, 0.32, 1.97);
+  transition: transform 2s cubic-bezier(0, 0.47, 0.32, 1.97), -webkit-transform 2s cubic-bezier(0, 0.47, 0.32, 1.97);
+  pointer-events: none;
+}
+
+.trigger.clicked .box {
+  -webkit-transform: translate(200px, 150px) rotate(20deg);
+          transform: translate(200px, 150px) rotate(20deg);
+}
